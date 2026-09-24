@@ -128,7 +128,7 @@ The minimum valid frame is a `GET` or `DEL` with a 1-byte key:
 1 (CMD) + 4 (key_len) + 1 (key) + 4 (value_len) + 0 (value) + 8 (ttl) = 18 bytes
 ```
 
-Any frame shorter than 17 bytes is malformed and must be rejected.
+Any frame shorter than 18 bytes is malformed and must be rejected.
 
 ### 3.2 Request Frame Layout
 
